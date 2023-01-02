@@ -1,0 +1,72 @@
+<html>
+
+<head>
+<style>
+
+div.static {
+  position: static;
+  border: 3px solid #73AD21;
+}
+
+div.relative {
+  position: relative;
+  left: 30px;
+  border: 3px solid #73AD21;
+}
+
+div.fixed {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  width: 300px;
+  border: 3px solid #73AD21;
+}
+
+div.relative-container {
+  position: relative;
+  width: 400px;
+  height: 200px;
+  border: 3px solid #73AD21;
+} 
+
+
+div.absolute {
+  position: absolute;
+  top: 80px;
+  right: 0;
+  width: 200px;
+  height: 100px;
+  border: 3px solid #73AD21;
+}
+
+</style>
+</head>
+
+<body>
+    <h1>CSS Layoyts</h1>
+
+    <div class="static">
+        This div element has position: static; is not positioned in any special way; it is always positioned according to the normal flow of the page
+    </div>
+
+    <div class="relative">
+        This div element has position: relative; with left margin 30px
+    </div>  
+    
+
+
+    <div class="fixed">
+        This div element has position: fixed; with bottom and right 0. is positioned relative to the viewport, which means it always stays in the same place even if the page is scrolled.
+    </div>
+
+    <div class="relative-container">This div element has position: relative;
+        <div class="absolute">This div element has position: absolute; with right as 0 and top 80 is positioned relative to the nearest positioned ancestor (instead of positioned relative to the viewport, like fixed):</div>
+        <div> regular flow</div>
+    </div>
+
+    <div>Continue flow</div>
+
+</body>
+
+
+</html>
